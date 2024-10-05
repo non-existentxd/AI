@@ -9,6 +9,6 @@
 pip install -r requirements.txt
 
 
-python your_script.py
+python AI.py
 
 
