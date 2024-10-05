@@ -1,10 +1,11 @@
-pip install transformers torch
+
+
 
 import torch
 from transformers import GPT2LMHeadModel, GPT2Tokenizer
 
 # Load model and tokenizer
-def load_model(model_name="gpt2"):
+def load_model(model_name=":)"):
     print("Loading model...")
     try:
         model = GPT2LMHeadModel.from_pretrained(model_name)
@@ -46,7 +47,7 @@ def generate_text(model, tokenizer, prompt, max_length=100, top_k=50, top_p=0.95
 
 # Main function to run the generator
 def run_generator():
-    # Load GPT-2 model and tokenizer
+    #load the :) model
     model, tokenizer = load_model()
     if model is None or tokenizer is None:
         return
@@ -77,6 +78,7 @@ def run_generator():
         for i, text in enumerate(generated_texts):
             print(f"\n--- Output {i+1} ---\n{text}")
     else:
+        #print out the try again ai model cant't respond to  quesrtion
         print("No text generated. Please try again.")
 
 # Run the generator
